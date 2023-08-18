@@ -1,0 +1,8 @@
+{
+  "name": "cli-nodejs-bindec",
+  "version": "1.0.0",
+  "description": "A CLI application that converts binary numbers to decimal numbers (vice versa).",
+  "main": "index.js",
+  "author": "Kent Louise Tonino",
+  "license": "MIT"
+}
