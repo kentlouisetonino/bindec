@@ -1,10 +1,15 @@
 export default class AppService {
-  // Clean up the terminal before running any process.
+  // This method clean up the terminal before running any process.
   static cleanUp() {
     console.clear();
   }
 
-  // Display the description of the app.
+  // This method add a newline.
+  static newline() {
+    console.log('\n');
+  }
+
+  // This method display the description of the app.
   static description() {
     console.log(' -------------------------------------------- ');
     console.log('|                                            |');
@@ -14,5 +19,12 @@ export default class AppService {
     console.log('| numbers to decimal numbers and vice versa. |');
     console.log('|                                            |');
     console.log('|____________________________________________|');
+  }
+
+  // This method allows user to choose an option.
+  static options() {
+    console.log('Please input only the number (1 | 2) option:');
+    console.log('(1) Binary to Decimal');
+    console.log('(2) Decimal to Binary');
   }
 }

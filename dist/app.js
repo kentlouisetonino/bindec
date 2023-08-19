@@ -40,17 +40,47 @@ var AppService_1 = require("./services/AppService");
 var IOService_1 = require("./services/IOService");
 (function App() {
     return __awaiter(this, void 0, void 0, function () {
-        var io, test;
+        var io, optionInput, binaryInput, binaryArray, reversedBinaryArray, decimalValue, maximumMultiple, multipleArray, i, i;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
+                    io = IOService_1.default.instance();
+                    // Initial display.
                     AppService_1.default.cleanUp();
                     AppService_1.default.description();
-                    io = IOService_1.default.instance();
-                    return [4 /*yield*/, io.question("Sample question: ")];
+                    AppService_1.default.newline();
+                    AppService_1.default.options();
+                    // Get the option input.
+                    AppService_1.default.newline();
+                    return [4 /*yield*/, io.question('Option: ')];
                 case 1:
-                    test = _a.sent();
-                    console.log('test', test);
+                    optionInput = _a.sent();
+                    if (!(Number(optionInput) === 1)) return [3 /*break*/, 3];
+                    // Refresh the display.
+                    AppService_1.default.cleanUp();
+                    AppService_1.default.description();
+                    AppService_1.default.newline();
+                    binaryInput = void 0;
+                    return [4 /*yield*/, io.question('Binary Value: ')];
+                case 2:
+                    // Get the binary numbers input.
+                    binaryInput = _a.sent();
+                    binaryArray = binaryInput.split('').map(function (num) { return Number(num); });
+                    reversedBinaryArray = binaryArray.reverse();
+                    decimalValue = 0;
+                    maximumMultiple = Math.pow(2, (binaryArray.length - 1));
+                    multipleArray = [1];
+                    for (i = 2; i <= maximumMultiple; i += i) {
+                        multipleArray.push(i);
+                    }
+                    for (i = 0; i < reversedBinaryArray.length; i++) {
+                        decimalValue += reversedBinaryArray[i] * multipleArray[i];
+                    }
+                    console.log('Decimal Value: ', decimalValue);
+                    AppService_1.default.newline();
+                    console.log('Thank you for using this App.');
+                    _a.label = 3;
+                case 3:
                     io.close();
                     return [2 /*return*/];
             }
