@@ -46,10 +46,10 @@ import IOService from './services/IOService';
     for (let i = 0; i < reversedBinaryArray.length; i++) {
       decimalValue += reversedBinaryArray[i] * multipleArray[i];
     }
-    
+
     console.log('Decimal Value: ', decimalValue);
-    AppService.newline()
-    console.log('Thank you for using this App.')
+    AppService.newline();
+    console.log('Thank you for using this App.');
   }
 
   io.close();
