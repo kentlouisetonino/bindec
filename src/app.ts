@@ -1,6 +1,5 @@
 import AppService from './services/AppService';
 import IOService from './services/IOService';
-import * as readline from 'node:readline';
 
 (async function App() {
   // Readline instance.
