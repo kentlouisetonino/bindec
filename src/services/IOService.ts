@@ -6,4 +6,11 @@ export default class IOService {
   static instance() {
     return readline.createInterface({ input: stdin, output: stdout });
   }
+
+  // This method check if the input is a valid binary numbers.
+  static notBinary(input: string) {
+    const regex = /[2-9]/;
+
+    return regex.test(input);
+  }
 }

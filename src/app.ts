@@ -12,7 +12,7 @@ import ConversionService from './services/ConversionService';
   AppService.newline();
   AppService.options();
 
-  // Variables.
+  // Variable for option input.
   let optionInput: string;
 
   // Get the option input.
@@ -40,11 +40,19 @@ import ConversionService from './services/ConversionService';
     AppService.description();
     AppService.newline();
 
-    const binaryInput = await io.question('Binary Value: ');
+    // Variable binary input.
+    let binaryInput: string;
+    let notBinary: boolean;
+
+    // Get the binary input.
+    binaryInput = await io.question('Binary: ');
+
     const decimalEquivalent = ConversionService.binaryToDecimal(binaryInput);
 
     console.log('Decimal Value: ', decimalEquivalent);
+
     AppService.newline();
+
     console.log('Thank you for using this App.');
   }
 
