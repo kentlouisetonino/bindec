@@ -64,5 +64,7 @@ import ConversionService from './services/ConversionService';
 
   console.log('Thank you for using this app.');
 
+  AppService.newline();
+
   io.close();
 })();
