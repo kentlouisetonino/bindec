@@ -19,6 +19,20 @@ import ConversionService from './services/ConversionService';
   AppService.newline();
   optionInput = await io.question('Option: ');
 
+  // Error handling for invalid option.
+  while (Number(optionInput) !== 1 && Number(optionInput) !== 2) {
+    AppService.cleanUp();
+    AppService.description();
+    AppService.newline();
+    AppService.invalidOption();
+    AppService.newline();
+    AppService.options();
+    AppService.newline();
+
+    // Ask the input again.
+    optionInput = await io.question('Option: ');
+  }
+
   // Binary to Decimal computation.
   if (Number(optionInput) === 1) {
     // Refresh the display.

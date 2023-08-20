@@ -27,4 +27,11 @@ export default class AppService {
     console.log('(1) Binary to Decimal');
     console.log('(2) Decimal to Binary');
   }
+
+  // This method will display error message for invalid option.
+  static invalidOption() {
+    const redColor = '\x1b[31m';
+    const resetColor = '\x1b[0m';
+    console.log(`${redColor}Please try again. Invalid input!${resetColor}`);
+  }
 }
