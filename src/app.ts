@@ -47,8 +47,6 @@ import ConversionService from './services/ConversionService';
     console.log('Decimal: ', decimalEquivalent);
 
     AppService.newline();
-
-    console.log('Thank you for using this App.');
   }
 
   if (Number(optionInput) === 2) {
@@ -61,8 +59,10 @@ import ConversionService from './services/ConversionService';
 
     console.log('Binary: ', binaryEquivalent);
 
-    console.log('Thank you for using this App.');
+    AppService.newline();
   }
+
+  console.log('Thank you for using this app.');
 
   io.close();
 })();
