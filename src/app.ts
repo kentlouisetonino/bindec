@@ -40,18 +40,26 @@ import ConversionService from './services/ConversionService';
     AppService.description();
     AppService.newline();
 
-    // Variable binary input.
-    let binaryInput: string;
-    let notBinary: boolean;
-
     // Get the binary input.
-    binaryInput = await io.question('Binary: ');
-
+    const binaryInput = await io.question('Binary: ');
     const decimalEquivalent = ConversionService.binaryToDecimal(binaryInput);
 
-    console.log('Decimal Value: ', decimalEquivalent);
+    console.log('Decimal: ', decimalEquivalent);
 
     AppService.newline();
+
+    console.log('Thank you for using this App.');
+  }
+
+  if (Number(optionInput) === 2) {
+    AppService.cleanUp();
+    AppService.description();
+    AppService.newline();
+
+    const decimalInput = await io.question('Decimal: ');
+    const binaryEquivalent = ConversionService.decimalToBinary(decimalInput);
+
+    console.log('Binary: ', binaryEquivalent);
 
     console.log('Thank you for using this App.');
   }

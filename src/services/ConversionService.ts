@@ -22,5 +22,23 @@ export default class ConversionService {
   }
 
   // This method converts decimal numbers to binary numbers.
-  static decimalToBinary() {}
+  static decimalToBinary(decimalInput: string) {
+    const decimalNumber = Number(decimalInput);
+
+    const binaryArray: number[] = [];
+    let currentNumber: number = Number(decimalInput);
+
+    while (Math.floor(currentNumber / 2) !== 0) {
+      binaryArray.push(currentNumber % 2);
+      currentNumber = Math.floor(currentNumber / 2);
+    }
+
+    if (currentNumber === 1) {
+      binaryArray.push(currentNumber % 2);
+    }
+
+    const reversedBinaryArray = binaryArray.reverse();
+
+    return Number(reversedBinaryArray.join(''));
+  }
 }
