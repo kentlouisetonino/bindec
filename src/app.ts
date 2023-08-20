@@ -1,5 +1,6 @@
 import AppService from './services/AppService';
 import IOService from './services/IOService';
+import ConversionService from './services/ConversionService';
 
 (async function App() {
   // Readline instance.
@@ -25,29 +26,10 @@ import IOService from './services/IOService';
     AppService.description();
     AppService.newline();
 
-    // Variables.
-    let binaryInput: string;
+    const binaryInput = await io.question('Binary Value: ');
+    const decimalEquivalent = ConversionService.binaryToDecimal(binaryInput);
 
-    // Get the binary numbers input.
-    binaryInput = await io.question('Binary Value: ');
-
-    // Process the input.
-    const binaryArray = binaryInput.split('').map((num) => Number(num));
-    const reversedBinaryArray = binaryArray.reverse();
-
-    let decimalValue = 0;
-    const maximumMultiple = 2 ** (binaryArray.length - 1);
-    let multipleArray = [1];
-
-    for (let i = 2; i <= maximumMultiple; i += i) {
-      multipleArray.push(i);
-    }
-
-    for (let i = 0; i < reversedBinaryArray.length; i++) {
-      decimalValue += reversedBinaryArray[i] * multipleArray[i];
-    }
-
-    console.log('Decimal Value: ', decimalValue);
+    console.log('Decimal Value: ', decimalEquivalent);
     AppService.newline();
     console.log('Thank you for using this App.');
   }
