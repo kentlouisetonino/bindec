@@ -1,11 +1,11 @@
 export default class AppService {
   // This method clean up the terminal before running any process.
-  static cleanUp() {
+  static cleanUp(): void {
     console.clear();
   }
 
   // This method add a newline.
-  static newline() {
+  static newline(): void {
     console.log('\n');
   }
 
@@ -22,16 +22,16 @@ export default class AppService {
   }
 
   // This method allows user to choose an option.
-  static options() {
+  static options(): void {
     console.log('Please input only the number (1 | 2) option:');
     console.log('(1) Binary to Decimal');
     console.log('(2) Decimal to Binary');
   }
 
   // This method will display error message for invalid option.
-  static invalidOption() {
+  static invalidOption(message: string): void {
     const redColor = '\x1b[31m';
     const resetColor = '\x1b[0m';
-    console.log(`${redColor}Please try again. Invalid input!${resetColor}`);
+    console.log(`${redColor}${message}${resetColor}`);
   }
 }

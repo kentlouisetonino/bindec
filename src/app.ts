@@ -24,7 +24,7 @@ import ConversionService from './services/ConversionService';
     AppService.cleanUp();
     AppService.description();
     AppService.newline();
-    AppService.invalidOption();
+    AppService.invalidOption('Invalid input. Please try again.');
     AppService.newline();
     AppService.options();
     AppService.newline();
