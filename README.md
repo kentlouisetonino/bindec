@@ -4,10 +4,8 @@
 <br />
 
 > - Below are the recordings while I started building this project from scratch.
-```bash
-#1: https://www.youtube.com/watch?v=9rdGTX0k0Hk
-#2: https://www.youtube.com/watch?v=bbNx4iSBp3M
-```
+    > #1: https://www.youtube.com/watch?v=9rdGTX0k0Hk
+    > #2: https://www.youtube.com/watch?v=bbNx4iSBp3M
 
 <br />
 
