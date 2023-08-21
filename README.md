@@ -1,5 +1,6 @@
 ## Description
-> - A CLI application that converts binary numbers to decimal numbers (vice versa).
+> - A CLI application that converts binary numbers to decimal numbers and vice versa.
+    The technologies are Typescript and NodeJS.
 
 <br />
 
