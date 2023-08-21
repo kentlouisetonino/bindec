@@ -43,6 +43,7 @@ import ConversionService from './services/ConversionService';
     // Necessary variables.
     let binaryInput: string;
     let invalidBinaryInput: boolean;
+    let decimalResult: number;
 
     // Get the binary input.
     binaryInput = await io.question('Binary: ');
@@ -68,11 +69,16 @@ import ConversionService from './services/ConversionService';
       }
 
       // Convert the binary input to decimal numbers.
-      const decimal = ConversionService.binaryToDecimal(binaryInput);
-
-      // Display result.
-      AppService.result('Decimal', decimal);
+      decimalResult = ConversionService.binaryToDecimal(binaryInput);
     }
+
+    if (!decimalResult) {
+      // Convert the binary input to deccimall numbers if no results yet.
+      decimalResult = ConversionService.binaryToDecimal(binaryInput);
+    }
+
+    // Display the result.
+    AppService.result('Decimal', decimalResult);
   }
 
   if (Number(optionInput) === 2) {
@@ -83,6 +89,7 @@ import ConversionService from './services/ConversionService';
     // Necessary variables.
     let decimalInput: string;
     let invalidDecimalInput: boolean;
+    let binaryResult: number;
 
     // Ge the decimal input.
     decimalInput = await io.question('Decimal: ');
@@ -108,11 +115,16 @@ import ConversionService from './services/ConversionService';
       }
 
       // Convert the decimal input to binary numbers.
-      const binary = ConversionService.decimalToBinary(decimalInput);
-
-      // Display the result.
-      AppService.result('Binary', binary);
+      binaryResult = ConversionService.decimalToBinary(decimalInput);
     }
+
+    if (!binaryResult) {
+      // Converts decimal input to binary numbers if no result yet.
+      binaryResult = ConversionService.decimalToBinary(decimalInput);
+    }
+
+    // Display the result.
+    AppService.result('Binary', binaryResult);
   }
 
   AppService.newline();
