@@ -28,6 +28,6 @@ yarn start
 
 
 ## Live Coding (Tagalog)
-> - (#1): https://www.youtube.com/watch?v=9rdGTX0k0Hk
-> - (#2): https://www.youtube.com/watch?v=bbNx4iSBp3M
+> (#1) https://www.youtube.com/watch?v=9rdGTX0k0Hk <br />
+> (#2) https://www.youtube.com/watch?v=bbNx4iSBp3M <br />
 
