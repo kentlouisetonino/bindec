@@ -8,7 +8,7 @@
 
 
 
-## [ `Local Development` ]
+## [ `Development` ]
 > - Run the following commands.
 ```bash
 yarn install
