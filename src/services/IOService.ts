@@ -8,7 +8,11 @@ export default class IOService {
   }
 
   // This method check if the input is a valid binary numbers.
-  static notBinary(input: string) {
+  static invalidBinaryInput(input: string) {
+    if (isNaN(Number(input))) {
+      return true;
+    }
+
     const regex = /[2-9]/;
 
     return regex.test(input);
