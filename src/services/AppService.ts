@@ -34,4 +34,9 @@ export default class AppService {
     const resetColor = '\x1b[0m';
     console.log(`${redColor}${message}${resetColor}`);
   }
+
+  // This method will display the result.
+  static result(type: string, value: number): void {
+    console.log(`${type}: `, value);
+  }
 }

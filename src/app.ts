@@ -43,7 +43,6 @@ import ConversionService from './services/ConversionService';
     // Necessary variables.
     let binaryInput: string;
     let invalidBinaryInput: boolean;
-    let tryAgain: string;
 
     // Get the binary input.
     binaryInput = await io.question('Binary: ');
@@ -61,6 +60,7 @@ import ConversionService from './services/ConversionService';
       // Ask binary input again.
       binaryInput = await io.question('Binary: ');
 
+      // Check again if valid binary input.
       invalidBinaryInput = IOService.invalidBinaryInput(binaryInput);
 
       if (invalidBinaryInput) {
@@ -71,10 +71,7 @@ import ConversionService from './services/ConversionService';
       const decimal = ConversionService.binaryToDecimal(binaryInput);
 
       // Display result.
-      console.log('Decimal: ', decimal);
-
-      // Check if want to try again.
-      AppService.newline();
+      AppService.result('Decimal', decimal);
     }
   }
 
@@ -83,13 +80,41 @@ import ConversionService from './services/ConversionService';
     AppService.description();
     AppService.newline();
 
-    const decimalInput = await io.question('Decimal: ');
-    const binaryEquivalent = ConversionService.decimalToBinary(decimalInput);
+    // Necessary variables.
+    let decimalInput: string;
+    let invalidDecimalInput: boolean;
 
-    console.log('Binary: ', binaryEquivalent);
+    // Ge the decimal input.
+    decimalInput = await io.question('Decimal: ');
 
-    AppService.newline();
+    // Check if valid decimal input.
+    invalidDecimalInput = IOService.invalidDecimalInput(decimalInput);
+
+    while (invalidDecimalInput) {
+      AppService.cleanUp();
+      AppService.description();
+      AppService.newline();
+      AppService.invalidOption('Invalid decimal input. Please try again.');
+      AppService.newline();
+
+      // Ask again the decimal input.
+      decimalInput = await io.question('Decimal: ');
+
+      // Check again if valid decimal input.
+      invalidDecimalInput = IOService.invalidDecimalInput(decimalInput);
+
+      if (invalidDecimalInput) {
+        continue;
+      }
+
+      // Convert the decimal input to binary numbers.
+      const binary = ConversionService.decimalToBinary(decimalInput);
+
+      // Display the result.
+      AppService.result('Binary', binary);
+    }
   }
 
+  AppService.newline();
   io.close();
 })();
