@@ -22,7 +22,5 @@ yarn start
 
 
 
-## [ `Recordings` ]
-> #1: https://www.youtube.com/watch?v=9rdGTX0k0Hk <br />
-> #2: https://www.youtube.com/watch?v=bbNx4iSBp3M <br />
-> #3: https://www.youtube.com/watch?v=NTjDmIh8w54 <br />
+## [ `Testing` ]
+https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/624934bd-bd29-4a97-8f5d-8789b309d1d4
