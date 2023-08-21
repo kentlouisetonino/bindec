@@ -20,7 +20,3 @@ yarn install
 yarn build
 yarn start
 ```
-
-<br />
-<br />
-<br />
