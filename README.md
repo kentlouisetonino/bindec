@@ -21,3 +21,13 @@ yarn build
 yarn start
 ```
 
+<br />
+<br />
+<br />
+
+
+
+## Live Coding (Tagalog)
+> - [#1]: https://www.youtube.com/watch?v=9rdGTX0k0Hk
+> - [#2]: https://www.youtube.com/watch?v=bbNx4iSBp3M
+
