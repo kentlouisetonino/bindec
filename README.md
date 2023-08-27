@@ -19,3 +19,15 @@ yarn install
 yarn build
 yarn start
 ```
+
+<br />
+
+> - Execute the app using the bash script.
+```bash
+# Change app permission and make it executable.
+sudo chmod +x app
+
+# Execute app.
+./app
+```
+
