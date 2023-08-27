@@ -31,3 +31,14 @@ sudo chmod +x app
 ./app
 ```
 
+<br />
+
+> - Execute the app-tests using the bash script.
+```bash
+# Change app-tests permission and make it executable.
+sudo chmod +x app-tests
+
+# Execute app-tests.
+./app-tests
+```
+
