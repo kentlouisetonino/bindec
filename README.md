@@ -1,6 +1,6 @@
 ### [ `Description` ]
 > - A CLI application that converts binary numbers to decimal numbers and vice versa. <br />
-    The technologies are Typescript and NodeJS.
+    The technologies are Typescript, Jest (Unit Test), Bash, and NodeJS.
 
 <br />
 
