@@ -13,11 +13,12 @@ https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/624934bd-b
 
 
 ### [ `Development` ]
-> - Run the following commands.
+> - For manually executing the scripts.
 ```bash
 yarn install
 yarn build
 yarn start
+yarn test:all
 ```
 
 <br />
