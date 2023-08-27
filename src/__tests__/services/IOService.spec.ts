@@ -8,19 +8,19 @@ describe('/services/IOService.ts', () => {
     done();
   });
 
-  test("b. invalidBinaryInput method should check if a valid binary.", (done) => {
-    const invalidBinaryTest = IOService.invalidBinaryInput("12345")
-    const validBinaryTest = IOService.invalidBinaryInput("1111")
-    expect(invalidBinaryTest).toBeTruthy()
-    expect(validBinaryTest).toBeFalsy()
-    done()
-  })
+  test('b. invalidBinaryInput method should check if a valid binary.', (done) => {
+    const invalidBinaryTest = IOService.invalidBinaryInput('12345');
+    const validBinaryTest = IOService.invalidBinaryInput('1111');
+    expect(invalidBinaryTest).toBeTruthy();
+    expect(validBinaryTest).toBeFalsy();
+    done();
+  });
 
-  test("c. invalidDecimalInput method should check if decimal is correct", (done) => {
-    const invalidDecimal = IOService.invalidDecimalInput("a112312")
-    const validDecimal = IOService.invalidDecimalInput("123")
-    expect(invalidDecimal).toBeTruthy()
-    expect(validDecimal).toBeFalsy()
-    done()
-  })
+  test('c. invalidDecimalInput method should check if decimal is correct', (done) => {
+    const invalidDecimal = IOService.invalidDecimalInput('a112312');
+    const validDecimal = IOService.invalidDecimalInput('123');
+    expect(invalidDecimal).toBeTruthy();
+    expect(validDecimal).toBeFalsy();
+    done();
+  });
 });
