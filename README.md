@@ -6,7 +6,7 @@
 
 > - Snap Store: https://snapcraft.io/install/cli-bindec/ubuntu
 
-https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/624934bd-bd29-4a97-8f5d-8789b309d1d4
+https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/4f5391df-9c7c-45a9-bb4f-55d2fb770218
 
 <br />
 <br />
