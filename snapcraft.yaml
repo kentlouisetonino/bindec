@@ -1,0 +1,26 @@
+name: cli-bindec
+version: git
+summary: Converts binary to decimal numbers and vice versa.
+description: |
+  A CLI application that converts binary numbers to decimal numbers and vice versa.
+
+grade: stable
+confinement: strict
+base: core20
+
+apps:
+  cli-bindec:
+    command: bin/cli-bindec
+    plugs:
+      - network-bind
+    daemon: simple
+    restart-condition: on-failure
+
+parts:
+  cli-bindec:
+    plugin: npm
+    npm-node-version: "18.13.0"
+    source: .
+    build-packages:
+      - yarn
+

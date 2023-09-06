@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import AppService from './services/AppService';
 import IOService from './services/IOService';
 import ConversionService from './services/ConversionService';

@@ -11,6 +11,9 @@
     "format": "prettier --write \"./src/**/*.ts\"",
     "test:all": "jest --watchAll --verbose --coverage --runInBand --no-cache"
   },
+  "bin": {
+    "cli-bindec": "./dist/app.js"
+  },
   "dependencies": {
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.9",
@@ -39,3 +42,4 @@
     ]
   }
 }
+

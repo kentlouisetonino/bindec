@@ -1,5 +1,4 @@
 node_modules
-dist
 
 # Ignore unit tests coverage.
 /src/coverage
