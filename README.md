@@ -6,6 +6,17 @@
 
 > - Snap Store: https://snapcraft.io/install/cli-bindec/ubuntu
 
+<br />
+
+> - Installation of the app.
+```bash
+# Install the app.
+sudo snap install cli-bindec --edge
+
+# Run the app.
+snap run cli-bindec
+```
+
 https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/624934bd-bd29-4a97-8f5d-8789b309d1d4
 
 <br />
@@ -59,13 +70,3 @@ snapcraft --debug
 snapcraft upload --release=edge <binary-name>_amd64.snap
 ```
 
-<br />
-
-> - Installation of the app.
-```bash
-# Install the app.
-sudo snap install cli-bindec --edge
-
-# Run the app.
-snap run cli-bindec
-```
