@@ -18,6 +18,8 @@ sudo snap install cli-bindec --edge
 snap run cli-bindec
 ```
 
+<br />
+
 https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/aee91ddc-144d-4059-ad88-6969613f6f21
 
 <br />
