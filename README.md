@@ -1,6 +1,7 @@
 ### [ `Description` ]
 > - A CLI application that converts binary numbers to decimal numbers and vice versa. 
-    The technologies are Typescript, Jest (Unit Test), Bash, and NodeJS.
+    The technologies are Typescript, Jest (Unit Test), Bash, NodeJS, Snapcraft, and
+    GNU/Linux.
 
 <br />
 
@@ -17,7 +18,7 @@ sudo snap install cli-bindec --edge
 snap run cli-bindec
 ```
 
-https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/624934bd-bd29-4a97-8f5d-8789b309d1d4
+https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/aee91ddc-144d-4059-ad88-6969613f6f21
 
 <br />
 <br />
