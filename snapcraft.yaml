@@ -1,5 +1,5 @@
 name: cli-bindec
-version: git
+version: "1.4"
 summary: Converts binary to decimal numbers and vice versa.
 description: |
   A CLI application that converts binary numbers to decimal numbers and vice versa.
