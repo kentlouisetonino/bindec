@@ -1748,6 +1748,15 @@ normalize-path@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
+npm-ioservice@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/npm-ioservice/-/npm-ioservice-1.7.0.tgz#5eadff3e0fe2c637896f2e770b5fc5d577006771"
+  integrity sha512-/9L5Klab8RGA5P6m/NMfzQcOo/uO5U9JA98olBFmqPzK8TgFmep6NgGrApSgGVkJdlKz9MtKMgBSyz9lMyqLpw==
+  dependencies:
+    "@types/node" "^20.6.0"
+    prettier "^3.0.3"
+    typescript "^5.2.2"
+
 npm-run-path@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-4.0.1.tgz#b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"

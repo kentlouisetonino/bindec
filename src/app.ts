@@ -1,7 +1,8 @@
 #! /usr/bin/env node
 import AppService from './services/AppService';
-import IOService from './services/IOService';
 import ConversionService from './services/ConversionService';
+import IOService from 'npm-ioservice';
+import ReadlineService from './services/ReadlineService';
 
 (async function App() {
   // Readline instance.
@@ -50,7 +51,7 @@ import ConversionService from './services/ConversionService';
     binaryInput = await io.question('Binary: ');
 
     // Check if valid binary input.
-    invalidBinaryInput = IOService.invalidBinaryInput(binaryInput);
+    invalidBinaryInput = ReadlineService.invalidBinaryInput(binaryInput);
 
     while (invalidBinaryInput) {
       AppService.cleanUp();
@@ -63,7 +64,7 @@ import ConversionService from './services/ConversionService';
       binaryInput = await io.question('Binary: ');
 
       // Check again if valid binary input.
-      invalidBinaryInput = IOService.invalidBinaryInput(binaryInput);
+      invalidBinaryInput = ReadlineService.invalidBinaryInput(binaryInput);
 
       if (invalidBinaryInput) {
         continue;
@@ -96,7 +97,7 @@ import ConversionService from './services/ConversionService';
     decimalInput = await io.question('Decimal: ');
 
     // Check if valid decimal input.
-    invalidDecimalInput = IOService.invalidDecimalInput(decimalInput);
+    invalidDecimalInput = ReadlineService.invalidDecimalInput(decimalInput);
 
     while (invalidDecimalInput) {
       AppService.cleanUp();
@@ -109,7 +110,7 @@ import ConversionService from './services/ConversionService';
       decimalInput = await io.question('Decimal: ');
 
       // Check again if valid decimal input.
-      invalidDecimalInput = IOService.invalidDecimalInput(decimalInput);
+      invalidDecimalInput = ReadlineService.invalidDecimalInput(decimalInput);
 
       if (invalidDecimalInput) {
         continue;
@@ -131,3 +132,4 @@ import ConversionService from './services/ConversionService';
   AppService.newline();
   io.close();
 })();
+

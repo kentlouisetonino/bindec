@@ -38,15 +38,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var AppService_1 = require("./services/AppService");
-var IOService_1 = require("./services/IOService");
 var ConversionService_1 = require("./services/ConversionService");
+var npm_ioservice_1 = require("npm-ioservice");
+var ReadlineService_1 = require("./services/ReadlineService");
 (function App() {
     return __awaiter(this, void 0, void 0, function () {
         var io, optionInput, binaryInput, invalidBinaryInput, decimalResult, decimalInput, invalidDecimalInput, binaryResult;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    io = IOService_1.default.instance();
+                    io = npm_ioservice_1.default.instance();
                     // Initial display.
                     AppService_1.default.cleanUp();
                     AppService_1.default.description();
@@ -86,7 +87,7 @@ var ConversionService_1 = require("./services/ConversionService");
                     // Get the binary input.
                     binaryInput = _a.sent();
                     // Check if valid binary input.
-                    invalidBinaryInput = IOService_1.default.invalidBinaryInput(binaryInput);
+                    invalidBinaryInput = ReadlineService_1.default.invalidBinaryInput(binaryInput);
                     _a.label = 6;
                 case 6:
                     if (!invalidBinaryInput) return [3 /*break*/, 8];
@@ -100,7 +101,7 @@ var ConversionService_1 = require("./services/ConversionService");
                     // Ask binary input again.
                     binaryInput = _a.sent();
                     // Check again if valid binary input.
-                    invalidBinaryInput = IOService_1.default.invalidBinaryInput(binaryInput);
+                    invalidBinaryInput = ReadlineService_1.default.invalidBinaryInput(binaryInput);
                     if (invalidBinaryInput) {
                         return [3 /*break*/, 6];
                     }
@@ -128,7 +129,7 @@ var ConversionService_1 = require("./services/ConversionService");
                     // Ge the decimal input.
                     decimalInput = _a.sent();
                     // Check if valid decimal input.
-                    invalidDecimalInput = IOService_1.default.invalidDecimalInput(decimalInput);
+                    invalidDecimalInput = ReadlineService_1.default.invalidDecimalInput(decimalInput);
                     _a.label = 11;
                 case 11:
                     if (!invalidDecimalInput) return [3 /*break*/, 13];
@@ -142,7 +143,7 @@ var ConversionService_1 = require("./services/ConversionService");
                     // Ask again the decimal input.
                     decimalInput = _a.sent();
                     // Check again if valid decimal input.
-                    invalidDecimalInput = IOService_1.default.invalidDecimalInput(decimalInput);
+                    invalidDecimalInput = ReadlineService_1.default.invalidDecimalInput(decimalInput);
                     if (invalidDecimalInput) {
                         return [3 /*break*/, 11];
                     }
