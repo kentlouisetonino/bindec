@@ -1,5 +1,5 @@
 ### [ `Description` ]
-> - A CLI application that converts binary numbers to decimal numbers and vice versa. 
+> - A CLI computer program that converts binary numbers to decimal numbers and vice versa. 
     The technologies are Typescript, Jest (Unit Test), Bash, NodeJS, Snapcraft, and
     GNU/Linux.
 
