@@ -15,8 +15,8 @@
     "cli-bindec": "./dist/app.js"
   },
   "dependencies": {
-    "@types/jest": "^29.5.5",
-    "@types/node": "^20.8.6",
+    "@types/jest": "^29.5.6",
+    "@types/node": "^20.8.9",
     "jest": "^29.7.0",
     "npm-ioservice": "^1.7.0",
     "prettier": "^3.0.3",
