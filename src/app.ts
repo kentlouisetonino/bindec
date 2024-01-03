@@ -1,7 +1,7 @@
 #! /usr/bin/env node
+import IOService from 'npm-ioservice';
 import AppService from './services/AppService';
 import ConversionService from './services/ConversionService';
-import IOService from 'npm-ioservice';
 import ReadlineService from './services/ReadlineService';
 
 (async function App() {
@@ -132,4 +132,3 @@ import ReadlineService from './services/ReadlineService';
   AppService.newline();
   io.close();
 })();
-
