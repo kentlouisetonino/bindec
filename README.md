@@ -3,22 +3,6 @@
 
 > - The technologies are Typescript, Jest (Unit Test), Bash, NodeJS, Snapcraft, and GNU/Linux.
 
-> - Snap Store: https://snapcraft.io/install/cli-bindec/ubuntu
-
-> - Installation of the app.
-
-```bash
-# Install the app.
-sudo snap install cli-bindec --edge
-
-# Run the app.
-snap run cli-bindec
-```
-
-<br />
-
-https://github.com/kentlouisetonino/cli-nodejs-bindec/assets/69438999/aee91ddc-144d-4059-ad88-6969613f6f21
-
 <br />
 <br />
 
@@ -62,18 +46,5 @@ sudo chmod +x app-tests
 
 # Execute app-tests.
 ./app-tests
-```
-
-> - Deployment to snap store.
-
-```bash
-# Clean first the cache.
-snapcraft clean
-
-# Use to generate a binary.
-snapcraft --debug
-
-# Deploy to snap store.
-snapcraft upload --release=edge <binary-name>_amd64.snap
 ```
 
